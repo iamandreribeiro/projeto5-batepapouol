@@ -22,4 +22,13 @@ function mantemConexao() {
     }, 5000);
 }
 
+function buscaMensagem() {
+    const busca = axios.get("https://mock-api.driven.com.br/api/v6/uol/messages");
+
+    busca.then((united) => {
+        console.log(united.data[2]);
+    });
+}
+
+buscaMensagem();
 enviaNome();
