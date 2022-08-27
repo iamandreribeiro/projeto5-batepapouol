@@ -4,10 +4,25 @@
     box-sizing: border-box;
 }
 
+a {
+    color: #AAAAAA;
+    margin: 0 10px;
+}
+
+i {
+    margin-right: 10px;
+}
+
+b {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
 html, body {
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
 .header ion-icon {
@@ -49,12 +64,12 @@ img {
     width: 100%;
 }
 
-.caixa {
+.conteudo {
     background-color: #F3F3F3;
     width: 100%;
     height: 100%;
-    overflow-y: hidden;
-    overflow: scroll;
+    overflow-y: scroll;
+    padding: 80px 0;
 }
 
 input {
@@ -72,14 +87,24 @@ input::placeholder  {
     font-size: 18px;
 }
 
-.mensagem {
-    background-color: #FFFFFF;
+.mensagem, .entrou, .privado {
     width: 100%;
+    height: 40px;
     border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0;
 }
 
-.entrou, .saiu {
+.mensagem {
+    background-color: #FFFFFF;
+}
+
+.entrou {
     background-color: #DCDCDC;
-    width: 100%;
-    border-radius: 2px;
+}
+
+.privado {
+    background-color: #FFDEDE;
 }
